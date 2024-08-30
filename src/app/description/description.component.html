@@ -1,0 +1,63 @@
+<style>
+  .image-container {
+    display: flex;
+  }
+  .image-container img {
+    margin-right: 15px; /* Optional: Add some space between the images */
+  }
+</style>
+<header class="text-gray-400 bg-gray-900 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-red-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span routerLink="/cover" class="ml-3 text-xl">Jenkins GitLab Plugins</span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <a routerLink="/description" class="mr-5 hover:text-white">Description</a>
+        <a routerLink="/methods" class="mr-5 hover:text-white">Methods</a>
+        <a routerLink= "/results"class="mr-5 hover:text-white">Results</a>
+        <a routerLink = '/doc' class="mr-5 hover:text-white">Documentation</a>
+      </nav>
+    </div>
+  </header>
+  <section class="text-gray-400 bg-gray-900 body-font">
+    <div class="justify-center container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="justify-center image-container">
+        <img alt="content"  height = "400" width="600" src="https://www.jenkins.io/images/developer/architecture/jenkins-dataflow.png">
+        
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 lg:w-1/2 md:w-full">
+          <div class="flex border-2 rounded-lg border-gray-800 p-8 sm:flex-row flex-col">
+            <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-8 h-8" viewBox="0 0 24 24">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg>
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-white text-lg title-font font-medium mb-3">Problem Statement</h2>
+              <p class="leading-relaxed text-base">Our project works with an integration mechanism between Jenkins and GitLab for GE Healthcare and their DevOps team. Jenkins is an open-source build server utilized by multiple teams within GE HealthCare, and Git is one of the most popular open-source distributed Source Code Managers (SCM). GE Healthcare is a company that provides digital infrastructure, data analytics & decision support tools helps in diagnosis, treatment, and monitoring of patients.​</p>
+              
+            </div>
+          </div>
+        </div>
+        <div class="p-4 lg:w-1/2 md:w-full">
+          <div class="flex border-2 rounded-lg border-gray-800 p-8 sm:flex-row flex-col">
+            <div class="w-16 h-16 sm:mr-8 sm:mb-0 mb-4 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 flex-shrink-0">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div class="flex-grow">
+              <h2 class="text-white text-lg title-font font-medium mb-3">Background</h2>
+              <p class="leading-relaxed text-base">The GitLab Branch Source plugin is a primarily Java-based plugin that has 83 forks, 115 stars, and 59 contributors. The plugin also has 116 documented bugs, 55 of which have been closed. To gain experience with making and merging changes to this open-source project, we decided to first solve some existing bugs, like Issue #264, which was a null-pointer error with archived projects. ​</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
